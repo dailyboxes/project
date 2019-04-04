@@ -1,0 +1,117 @@
+.footer{
+    width: 100%;
+    background-color: #fafafa;
+}
+.footer footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1240px;
+}
+
+// footer-top
+.footer footer .footer-top{
+    border-bottom: 2px solid #ecedef;
+    height: 141px;
+    color: #0061af;
+    display: flex;
+    justify-content: space-around;
+}
+.footer footer .footer-top dl{
+    float: left;
+}
+.footer footer .footer-top dl dt{
+    margin-top: 50px;
+}
+.footer footer .footer-top dl dd{
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 64px;
+    color: #2b2b2b;
+    font-size: 18px;
+}
+
+// footer-center
+.footer footer .footer-center{
+    border-bottom: 2px solid #ecedef;
+    height: 183px;
+}
+.footer footer .footer-center .center1{
+    font-size: 14px;
+}
+.footer footer .footer-center .center1 dl{
+    margin-left: 50px;
+    width: 140px;
+    padding: 32px 0 41px;
+}
+.footer footer .footer-center .center1 dl dt{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #2f2f2f;
+}
+.footer footer .footer-center .center1 dl dd{
+    line-height: 25px;
+    font-size: 14px;
+}
+.footer footer .footer-center .center1 dl dd a{
+    color: #9fa0a0;
+}
+.footer footer .footer-center .center2{
+    padding: 30px 0 41px;
+    position: absolute;
+}
+.footer footer .footer-center .center2 img{
+    padding-left: 30px;
+    display: block;
+    border: none;
+}
+.footer footer .footer-center .center2 p{
+    color: #9fa0a0;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.footer footer .footer-center .center3{
+    top: 75px;
+    right: 70px;
+    margin-top: -43px;
+    position: absolute;
+}
+
+
+// footer-bottom
+.footer footer .footer-bottom{
+    padding-bottom: 150px;
+}
+.footer footer .footer-bottom .bottom-left .bottom-left1 img{
+    width: 145px;
+    height: 17px;
+    margin-top: 36px;
+    margin-right: 30px;
+    display: block;
+}
+.footer footer .footer-bottom .bottom-left .bottom-left2{
+    color: #939191;
+    width: 575px;
+}
+.footer footer .footer-bottom .bottom-left .bottom-left2 p{
+    margin-top: 25px;
+}
+.footer footer .footer-bottom .bottom-left .bottom-left2 p a{
+    color: #939191;
+}
+
+.footer footer .footer-bottom .bottom-right{
+    color: #898989;
+    margin-top: 25px;
+}
+.footer footer .footer-bottom .bottom-right a img{
+    display: inline-block;
+    border: none;
+}
+.footer footer .footer-bottom .bottom-right a span{
+    vertical-align: top;
+    border-left: 1px solid #898989;
+    display: inline-block;
+    height: 37px;
+    margin: 0 2px;
+}

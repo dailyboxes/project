@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header" id="header-container"></div>
+
+    <!-- 导航 -->
+    <div class="list-nav">
+        <div class="list-nav-wrap">
+            <a href="/">首页</a>
+            <span class="line">/</span>
+            <a href="#">(分类名)</a>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="subject">
+        <!-- 导航 -->
+        <div class="sub-nav">
+            |
+            <a href="javascript:;">销量</a>
+            |
+            <a href="javascript:;">新品</a>
+            |
+            <a href="javascript:;">价格</a>
+            |
+            <a href="javascript:;">人气</a>
+            |
+        </div>
+        <!-- 商品列表 -->
+        <div class="sub-list" id="sub-container">
+            <!-- <ul>
+                <li class="sub-list-shop fl">
+                    <a href="shopItem.html" target="_blank" class="shop-img">
+                        <img src="" alt="">
+                    </a>
+                    <h2 class="price">￥</h2>
+                    <a href="shopItem.html" class="title">feike</a>
+                    <a href="javascript:;" class="desc">feike</a>
+                    <p class="sale">
+                        本款产品月销售量：
+                        <span class="sale-num">123</span>
+                        |评价
+                        <span class="evaluate">4</span>
+                    </p>
+                </li>
+
+                <li class="sub-list-class fl">
+                    <a href="shopItem.html" target="_blank" class="shop-img">
+                        <img src="" alt="">
+                    </a>
+                    <h2 class="price">￥</h2>
+                    <a href="shopItem.html" class="title">feike</a>
+                    <a href="javascript:;" class="desc">feike</a>
+                    <p class="sale">
+                        本款产品月销售量：
+                        <span class="sale-num">123</span>&nbsp;|&nbsp;评价
+                        <span class="evaluate">4</span>
+                    </p>
+                </li>
+            </ul> -->
+        </div>
+        <!-- 推荐商品 -->
+        <div class="sub-recommend">
+            <div class="recommend-wrap">
+                <div class="mubanwrap">
+                    <div class="recommend-title">
+                        <fieldset>
+                            <legend>
+                                <h2 class="rec-shop">推荐商品</h2>
+                            </legend>
+                        </fieldset>
+                    </div>
+                    <div class="info-container" id="info-container">
+                        <!-- <ul class="recommend-info">
+                            <li class="recommend-item fl">
+                                <div class="recommend-item-wrap">
+                                    <a href="http://shopItem" target="_blank" class="block1">
+                                        <img src="../img/2.jpg" alt="">
+                                    </a>
+                                    <a href="http://shopItem" target="_blank" class="block2">
+                                        feike
+                                    </a>
+                                    <p class="recommend-p">￥</p>
+                                </div>
+                            </li>
+                            <li class="recommend-item fl"></li>
+                            <li class="recommend-item fl"></li>
+                            <li class="recommend-item fl"></li>
+                        </ul> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer" id="footer-container"></div>
+
+
+    <script type="text/html" id="subList">
+        <ul>
+            {{each list item}}
+            <li class="sub-list-shop fl">
+                <a href="shopItem.html" target="_blank" class="shop-img">
+                    <img src="{{item.img}}" alt="">
+                </a>
+                <h2 class="price">￥{{item.price}}</h2>
+                <a href="shopItem.html" class="title">{{item.title}}</a>
+                <a href="javascript:;" class="desc">{{item.desc}}</a>
+                <p class="sale">
+                    本款产品月销售量：
+                    <span class="sale-num">{{item.salenum}}</span>&nbsp;|&nbsp;评价
+                    <span class="evaluate">{{item.evaluate}}</span>
+                </p>
+            </li>
+
+            <!-- <li class="sub-list-shop fl sub-list-class" style="margin: 0 73px 0 0;">
+                <a href="shopItem.html" target="_blank" class="shop-img">
+                    <img src="{{item.img}}" alt="">
+                </a>
+                <h2 class="price">￥{{item.price}}</h2>
+                <a href="shopItem.html" class="title">{{item.title}}</a>
+                <a href="javascript:;" class="desc">{{item.desc}}</a>
+                <p class="sale">
+                    本款产品月销售量：
+                    <span class="sale-num">{{item.salenum}}</span>&nbsp;|&nbsp;评价
+                    <span class="evaluate">{{item.evaluate}}</span>
+                </p>
+            </li> -->
+            {{ /each }}
+        </ul>
+    </script>
+
+    <script type="text/html" id="recList">
+        <ul class="recommend-info">
+            {{each list item}}
+            <li class="recommend-item fl">
+                <div class="recommend-item-wrap">
+                    <a href="http://shopItem" target="_blank" class="block1">
+                        <img src="{{item.img}}" alt="">
+                    </a>
+                    <a href="http://shopItem" target="_blank" class="block2">
+                        {{item.title}}
+                    </a>
+                    <p class="recommend-p">￥{{item.price}}</p>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+
+
+
+    <script type="text/javascript" src="/libs/requirejs/require.min.js" data-main="../js/list"></script>
+</body>
+</html>

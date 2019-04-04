@@ -1,0 +1,156 @@
+header{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #fafafa;
+    color: #a5a5a5;
+}
+header .wrap{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1240px;
+    height: 36px;
+}
+header .wrap .left .left1{
+    background: url(/img/collect.jpg) no-repeat left center;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+header .wrap .left .left1 a{
+    color: #a5a5a5;
+}
+header .wrap .left .left2{
+    padding-left: 20px;
+    margin-right: 15px;
+    position: relative;
+    cursor: pointer;
+    background: url(/img/weixin1.jpg) no-repeat left center;
+}
+header .wrap .right .right1 .vertical{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header .wrap .right .right1 a{
+    color: #a5a5a5;
+}
+header .wrap .right .right2 a{
+    color: #a5a5a5;
+}
+
+
+.header-logo{
+    width: 1240px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-logo .logo{
+    height: 57px;
+    margin-top: 28px;
+}
+.header-logo .logo .logo-a{
+    display: inline-block;
+}
+.header-logo .logo .logo-a .logo-img{
+    border: none;
+    display: block;
+    width: 132px;
+    height: 45px;
+}
+.header-logo .homepage{
+    margin-top: 50px;
+    margin-left: 24px;
+    float: left;
+    background: #0c82d9;
+    height: 23px;
+    width: 72px;
+    border-radius: 5px;
+}
+.header-logo .homepage .logo-a{
+    display: inline-block;
+    width: 72px;
+}
+.header-logo .homepage .logo-a .homepage-img{
+    display: inline;
+    margin: 3px 8px 3px 6px;
+    float: left;
+    border: none;
+    width: 17px;
+    height: 17px;
+}
+.header-logo .homepage .logo-a .homepage-span{
+    font-size: 15px;
+    color: #fff;
+    height: 23px;
+    line-height: 23px;
+    float: right;
+    margin-right: 8px;
+    font-family: 'Microsoft Yahei',sans-serif;
+    display: inline;
+}
+.header-logo .search{
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.header-logo .search .search-form{
+    width: 433px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #dfdfdf;
+    position: relative;
+}
+.header-logo .search .search-form .search-input{
+    width: 383px;
+    height: 38px;
+    line-height: 38px;
+    border: 0 none;
+    color: rgb(169, 169, 169);
+    padding-left: 10px;
+    font-size: 14px;
+    outline: none;
+}
+.header-logo .search .search-form .search-btn{
+    border: 0;
+    border-left: 1px solid #dfdfdf;
+    width: 38px;
+    height: 38px;
+    background: url(/img/searchbg.png) 0 0;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #26a3ff;
+    cursor: pointer;
+    transition: all 0.4s;
+    outline: none;
+}
+.header-logo .shopping{
+    margin-top: 35px;
+    width: 126px;
+    height: 40px;
+}
+.header-logo .shopping .shopping-cart{
+    background-color: #0c82d9;
+    border: 1px solid #0c82d9;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    padding: 9px 10px;
+    position: relative;
+    text-align: center;
+    width: 104px;
+    color: #fff;
+}
+.header-logo .shopping .shopping-cart .icon{
+    vertical-align: middle;
+    margin-right: 10px;
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    background: url(/img/cartp.png) no-repeat 0 0;
+}
