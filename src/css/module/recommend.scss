@@ -1,0 +1,71 @@
+.sub-recommend{
+    padding-bottom: 50px;
+    .recommend-wrap{
+        width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
+        .mubanwrap .recommend-title{
+            padding-top: 40px;
+            fieldset{
+                height: 50px;
+                border-top: 2px solid #e0e0e0;
+                padding-top: 10px;
+                border-left: 0;
+                border-bottom: 0;
+                border-right: 0;
+                legend{
+                    text-align: center;
+                    .rec-shop{
+                        width: 300px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 30px;
+                        text-align: center;
+                        font-weight: normal;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        .mubanwrap .recommend-info{
+            width: 1240px;
+            height: 311px;
+            border: 1px solid #dfdfdf;
+            border-left: 0;
+            background: #fff;
+            margin-top: 25px;
+            .recommend-item{
+                width: 308px;
+                height: 311px;
+                border-left: 1px solid #dfdfdf;
+                .recommend-item-wrap{
+                    height: 299px;
+                    border: 6px solid #fff;
+                    width: 296.75px;
+                    text-align: center;
+                    .block1{
+                        color: #1b1b1b;
+                        display: block;
+                        img{
+                            margin: 0 28px;
+                            border: none;
+                            width: 240px;
+                            height: 240px;
+                        }
+                    }
+                    .block2{
+                        color: #1b1b1b;
+                        display: block;
+                        font-size: 16px;
+                        margin-bottom: 8px;
+                        margin-top: 5px;
+                    }
+                    .recommend-p{
+                        font-size: 13px;
+                        color: #b4b4b4;
+                    }
+                }
+            }
+        }
+    }
+}

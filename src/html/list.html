@@ -12,12 +12,12 @@
     <div class="header" id="header-container"></div>
 
     <!-- 导航 -->
-    <div class="list-nav">
-        <div class="list-nav-wrap">
+    <div class="list-nav" id="listnav">
+        <!-- <div class="list-nav-wrap">
             <a href="/">首页</a>
             <span class="line">/</span>
             <a href="#">(分类名)</a>
-        </div>
+        </div> -->
     </div>
 
     <!-- 主体 -->
@@ -25,13 +25,13 @@
         <!-- 导航 -->
         <div class="sub-nav">
             |
-            <a href="javascript:;">销量</a>
+            <a href="javascript:;" id="saleMany">销量</a>
             |
-            <a href="javascript:;">新品</a>
+            <a href="javascript:;" id="newShop">新品</a>
             |
-            <a href="javascript:;">价格</a>
+            <a href="javascript:;" id="pariceRise">价格</a>
             |
-            <a href="javascript:;">人气</a>
+            <a href="javascript:;" id="popularity">人气</a>
             |
         </div>
         <!-- 商品列表 -->
@@ -106,7 +106,7 @@
     <div class="footer" id="footer-container"></div>
 
 
-    <script type="text/html" id="subList">
+    <!-- <script type="text/html" id="subList">
         <ul>
             {{each list item}}
             <li class="sub-list-shop fl">
@@ -122,25 +122,11 @@
                     <span class="evaluate">{{item.evaluate}}</span>
                 </p>
             </li>
-
-            <!-- <li class="sub-list-shop fl sub-list-class" style="margin: 0 73px 0 0;">
-                <a href="shopItem.html" target="_blank" class="shop-img">
-                    <img src="{{item.img}}" alt="">
-                </a>
-                <h2 class="price">￥{{item.price}}</h2>
-                <a href="shopItem.html" class="title">{{item.title}}</a>
-                <a href="javascript:;" class="desc">{{item.desc}}</a>
-                <p class="sale">
-                    本款产品月销售量：
-                    <span class="sale-num">{{item.salenum}}</span>&nbsp;|&nbsp;评价
-                    <span class="evaluate">{{item.evaluate}}</span>
-                </p>
-            </li> -->
             {{ /each }}
         </ul>
-    </script>
+    </script> -->
 
-    <script type="text/html" id="recList">
+    <!-- <script type="text/html" id="recList">
         <ul class="recommend-info">
             {{each list item}}
             <li class="recommend-item fl">
@@ -156,7 +142,7 @@
             </li>
             {{/each}}
         </ul>
-    </script>
+    </script> -->
 
 
 

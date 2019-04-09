@@ -1,0 +1,19 @@
+<script type="text/html" id="subList">
+    <ul>
+        {{each list item}}
+        <li class="sub-list-shop fl">
+            <a href="../../html/details.html?id={{item.id}}" target="_blank" class="shop-img">
+                <img src="{{item.img}}" alt="">
+            </a>
+            <h2 class="price">￥{{item.price}}</h2>
+            <a href="../../html/details.html?id={{item.id}}" class="title">{{item.title}}</a>
+            <a href="../../html/details.html?id={{item.id}}" class="desc">{{item.desc}}</a>
+            <p class="sale">
+                本款产品月销售量：
+                <span class="sale-num">{{item.salenum}}</span>&nbsp;|&nbsp;评价
+                <span class="evaluate">{{item.evaluate}}</span>
+            </p>
+        </li>
+        {{ /each }}
+    </ul>
+</script>

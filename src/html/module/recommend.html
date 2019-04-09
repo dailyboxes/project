@@ -1,0 +1,17 @@
+<script type="text/html" id="recList">
+    <ul class="recommend-info">
+        {{each list item}}
+        <li class="recommend-item fl">
+            <div class="recommend-item-wrap">
+                <a href="../../html/details.html" target="_blank" class="block1">
+                    <img src="{{item.img}}" alt="">
+                </a>
+                <a href="../../html/details.html" target="_blank" class="block2">
+                    {{item.title}}
+                </a>
+                <p class="recommend-p">￥{{item.price}}</p>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>

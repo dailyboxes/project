@@ -1,0 +1,378 @@
+@import "style";
+@import "module/header.scss";
+@import "module/footer.scss";
+@import "module/recommend.scss";
+@import "module/listnav.scss";
+@import "module/aftersale.scss";
+
+.fl{
+    float: left;
+    display: inline;
+}
+.fr{
+    float: right;
+    display: inline;
+}
+.styledisplay{
+    display: none;
+}
+.pr{
+    position: relative;
+}
+
+.shopdetails{
+    background-color: #ffffff;
+    .details-container{
+        width: 1240px;
+        margin-right: auto;
+        margin-left: auto;
+        // left
+        .box-container{
+            height: 573px;
+            width: 1240px;
+            padding-bottom: 10px;
+            .detailsleft{
+                margin: 38px 47px 0 33px;
+                width: 386px;
+                height: 450px;
+                border: 1px solid #ddd;
+                background-color: #fff;
+                .details-big-img{
+                    position: relative;
+                    width: 372px;
+                    height: 368px;
+                    margin: 7px;
+                    .big-img{
+                        outline-style: none;
+                        text-decoration: none;
+                        cursor: crosshair;
+                        display: block;
+                        position: relative;
+                        height: 368px;
+                        width: 372px;
+                        img{
+                            width: 372px;
+                            height: 368px;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            display: block;
+                            border: none;
+                        }
+                    }
+                }
+                .details-small-img{
+                    height: 60px;
+                    width: 372px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 5px;
+                    // .btnprev{
+                    //     margin-right: 13px;
+                    //     display: inline;
+                    //     float: left;
+                    //     width: 13px;
+                    //     height: 60px;
+                    //     overflow: hidden;
+                    // }
+                    .btncenter{
+                        width: 372px;
+                        display: inline;
+                        float: left;
+                        height: 60px;
+                        overflow: hidden;
+                        .small-img{
+                            width: 100%;
+                            .list-img{
+                                height: 60px;
+                                margin-right: 18px;
+                                display: inline;
+                                float: left;
+                                .s{
+                                    width: 58px;
+                                    height: 58px;
+                                    cursor: pointer;
+                                }
+                                i{
+                                    display: none;
+                                }
+                                // span{
+                                //     display: block;
+                                //     border: 1px solid #dad7d7;
+                                //     width: 58px;
+                                //     height: 58px;
+                                //     cursor: pointer;
+                                //     img{
+                                //         width: 58px;
+                                //         height: 58px;
+                                //     }
+                                // }
+                            }
+                            .list-img:nth-last-child(1){
+                                margin-right: 0;
+                            }
+                            .current{
+                                border: 1px solid #1f6bc3;
+                                padding: 0;
+                                width: 58px;
+                                height: 58px;
+                            }
+                        }
+                    }
+                    // .btnnext{
+                    //     margin-left: 13px;
+                    //     display: inline;
+                    //     float: left;
+                    //     width: 13px;
+                    //     height: 60px;
+                    //     overflow: hidden;
+                    // }
+                }
+            }
+            // right
+            .detailsright{
+                width: 708px;
+                height: 540px;
+                .detailswrap{
+                    margin-top: 30px;
+                    .detailstitle{
+                        font-size: 23px;
+                        line-height: 30px;
+                        margin-top: 20px;
+                        font-weight: normal;
+                    }
+                    .detailsinfo{
+                        padding: 12px 0;
+                        color: #818181;
+                        .details-price{
+                            margin: 10px 0;
+                            padding-top: 10px;
+                            border-top: 1px dotted #ccc;
+                            .details-p{
+                                padding-top: 10px;
+                                .p-span{
+                                    text-decoration: line-through;
+                                }
+                                .money-em{
+                                    color: #ff7c44;
+                                }
+                                .p-span2{
+                                    font-size: 32px;
+                                    color: #ff7c44;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        .sale-wrap{
+                            border-top: 1px dotted #ccc;
+                            .sale-p{
+                                padding-top: 10px;
+                                .user-say{
+                                    color: #999999;
+                                    font-size: 12px;
+                                }
+                            }
+                            .sale-p1{
+                                padding: 10px 0;
+                                .sale-month{
+                                    color: #ff7c44;
+                                }
+                            }
+                        }
+
+                        .sale-num{
+                            overflow: hidden;
+                            .num-add-sub{
+                                margin-bottom: 20px;
+                                .purchase-num{
+                                    height: 25px;
+                                    line-height: 25px;
+                                    margin-right: 20px;
+                                }
+                                .num-and{
+                                    margin-right: 20px;
+                                    .num-sub{
+                                        width: 23px;
+                                        height: 23px;
+                                        line-height: 23px;
+                                        border: 1px solid #ddd;
+                                        background-color: #fff;
+                                        margin-bottom: 1px;
+                                        display: inline-block;
+                                        text-align: center;
+                                        font-size: 16px;
+                                        color: #000000;
+                                    }
+                                    .num-input{
+                                        text-align: center;
+                                        margin: 0 2px;
+                                        width: 48px;
+                                        height: 23px;
+                                        line-height: 23px;
+                                        border: 1px solid #ddd;
+                                        background-color: #fff;
+                                        outline: none;
+                                    }
+                                    .num-add{
+                                        width: 23px;
+                                        height: 23px;
+                                        line-height: 23px;
+                                        border: 1px solid #ddd;
+                                        background-color: #fff;
+                                        margin-bottom: 1px;
+                                        display: inline-block;
+                                        text-align: center;
+                                        font-size: 16px;
+                                        color: #000000;
+                                    }
+                                }
+                                .stock{
+                                    height: 25px;
+                                    line-height: 25px;
+                                    .stock-num{
+                                        height: 25px;
+                                        line-height: 25px;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .details-btn{
+                            height: 48px;
+                            margin-top: 12px;
+                            .btn1{
+                                background-color: #df7141;
+                                width: 141px;
+                                height: 48px;
+                                line-height: 48px;
+                                border: 0;
+                                color: #fff;
+                                font-size: 18px;
+                                cursor: pointer;
+                                margin-right: 10px;
+                                display: inline-block;
+                                outline: none;
+                            }
+                            .btn2{
+                                width: 141px;
+                                height: 48px;
+                                line-height: 48px;
+                                border: 0;
+                                color: #fff;
+                                font-size: 18px;
+                                background-color: #2264af;
+                                cursor: pointer;
+                                display: inline-block;
+                                outline: none;
+                            }
+                        }
+
+                        .promo{
+                            height: 18px;
+                            margin-top: 20px;
+                            color: #000000;
+                            ul{
+                                margin: 15px 18px;
+                                font-size: 14px;
+                                li{
+                                    margin-bottom: 5px;
+                                    list-style: disc;
+                                }
+                            }
+                        }
+
+                        .share{
+                            margin-top: 12px;
+                            .share-a{
+                                line-height: 41px;
+                                background: url(../img/collect.jpg) no-repeat left center;
+                                padding-left: 20px;
+                                display: inline-block;
+                                color: #000000;
+                            }
+                            .share-div{
+                                padding-left: 100px;
+                                padding-top: 5px;
+                                .share-more{
+                                    padding-left: 20px;
+                                    float: left;
+                                    color: #333333;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    height: 16px;
+                                    background-image: url(https://www.flyco.com/static/api/img/share/icons_0_16.png?v=ba7acbd3.png);
+                                    background-repeat: no-repeat;
+                                    cursor: pointer;
+                                    margin: 6px 6px 6px 0;
+                                    background-position: 0 0;
+                                    outline: none;
+                                }
+                                .share-sina{
+                                    float: left;
+                                    font-size: 12px;
+                                    padding-left: 17px;
+                                    line-height: 16px;
+                                    height: 16px;
+                                    background-image: url(https://www.flyco.com/static/api/img/share/icons_0_16.png?v=ba7acbd3.png);
+                                    background-repeat: no-repeat;
+                                    cursor: pointer;
+                                    margin: 6px 6px 6px 0;
+                                    background-position: 0 -104px;
+                                }
+                                .share-tencent{
+                                    float: left;
+                                    font-size: 12px;
+                                    padding-left: 17px;
+                                    line-height: 16px;
+                                    height: 16px;
+                                    background-image: url(https://www.flyco.com/static/api/img/share/icons_0_16.png?v=ba7acbd3.png);
+                                    background-repeat: no-repeat;
+                                    cursor: pointer;
+                                    margin: 6px 6px 6px 0;
+                                    background-position: 0 -260px;
+                                }
+                                .share-qq{
+                                    float: left;
+                                    font-size: 12px;
+                                    padding-left: 17px;
+                                    line-height: 16px;
+                                    height: 16px;
+                                    background-image: url(https://www.flyco.com/static/api/img/share/icons_0_16.png?v=ba7acbd3.png);
+                                    background-repeat: no-repeat;
+                                    cursor: pointer;
+                                    margin: 6px 6px 6px 0;
+                                    background-position: 0 -52px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.after-sale{
+    background-color: #f5f5f5;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
