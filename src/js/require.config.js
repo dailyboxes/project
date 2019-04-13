@@ -10,11 +10,16 @@ require.config({
         "recommend" : "/js/module/recommend",
         "listnav" : "/js/module/listnav",
         "aftersale" : "/js/module/aftersale",
-        "zoom" : "../libs/jquery-plugins/jquery.elevateZoom-3.0.8.min.js"
+        "zoom" : "libs/jquery-plugins/jquery.elevateZoom-3.0.8.min",
+        "tools" : "/libs/tools/tools",
+        "fly" : "../libs/jquery-plugins/jquery.fly.min"
     },
     // 垫片，不满足AMD规范的模块，但是依赖于另外的模块
     shim : {
         "zoom" : {
+            deps : ["jquery"]
+        },
+        "fly" : {
             deps : ["jquery"]
         }
     }

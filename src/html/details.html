@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>details</title>
     <link rel="stylesheet" href="../css/details.css">
 </head>
 <body>
@@ -20,9 +20,7 @@
     </div>
 
     <!-- 售后服务 -->
-    <div class="after-sale" id="aftersale">
-        
-    </div>
+    <div class="after-sale" id="aftersale"></div>
 
     <!-- footer -->
     <div class="footer" id="footer-container"></div>
@@ -31,58 +29,56 @@
         <div class="box-container">
             <!-- 详情页左 -->
             <div class="detailsleft fl">
-                <div class="details-big-img">
-                    <a href="#" target="_blank" class="big-img">
-                        <img src="{{imgs[0]}}" alt="">
-                    </a>
+                <div class="view_bd">
+                    <img class="zoom-img" src="{{imgs[0]}}" data-zoom-image="{{imgs[0]}}"/>
                 </div>
-                <div class="details-small-img">
-                    
-                    <div class="btncenter">
-                        <ul class="small-img">
-                            <li class="list-img current">
-                                <a href="#" data-image="{{imgs[0]}}" data-zoom-image="{{imgs[0]}}"></a>
-                                <img class="s" src="{{imgs[0]}}" />
-                                <i>^</i>
-                                <!-- <span>
-                                    <img src="{{imgs[0]}}" alt="">
-                                </span> -->
-                            </li>
-                            <li class="list-img">
-                                <a href="#" data-image="{{imgs[1]}}" data-zoom-image="{{imgs[1]}}"></a>
-                                <img class="s" src="{{imgs[1]}}" />
-                                <i>^</i>
-                                <!-- <span>
-                                    <img src="{{imgs[1]}}" alt="">
-                                </span> -->
-                            </li>
-                            <li class="list-img">
-                                <a href="#" data-image="{{imgs[2]}}" data-zoom-image="{{imgs[2]}}"></a>
-                                <img class="s" src="{{imgs[2]}}" />
-                                <i>^</i>
-                                <!-- <span>
-                                    <img src="{{imgs[2]}}" alt="">
-                                </span> -->
-                            </li>
-                            <li class="list-img">
-                                <a href="#" data-image="{{imgs[3]}}" data-zoom-image="{{imgs[3]}}"></a>
-                                <img class="s" src="{{imgs[3]}}" />
-                                <i>^</i>
-                                <!-- <span>
-                                    <img src="{{imgs[3]}}" alt="">
-                                </span> -->
-                            </li>
-                            <li class="list-img">
-                                <a href="#" data-image="{{imgs[4]}}" data-zoom-image="{{imgs[4]}}"></a>
-                                <img class="s" src="{{imgs[4]}}" />
-                                <i>^</i>
-                                <!-- <span>
-                                    <img src="{{imgs[4]}}" alt="">
-                                </span> -->
-                            </li>
-                        </ul>
-                    </div>
+                <div class="view_thumbs" id="gal1">
+                    <ul class="view-ul">
+                        <li class="current">
+                            <a href="#" data-image="{{imgs[0]}}" data-zoom-image="{{imgs[0]}}">
+                            <img class="s" src="{{imgs[0]}}" />
+                            <i>^</i>
+                            <!-- <span>
+                                <img src="{{imgs[0]}}" alt="">
+                            </span> -->
+                        </li>
+                        <li>
+                            <a href="#" data-image="{{imgs[1]}}" data-zoom-image="{{imgs[1]}}">
+                            <img class="s" src="{{imgs[1]}}" />
+                            <i>^</i>
+                            <!-- <span>
+                                <img src="{{imgs[1]}}" alt="">
+                            </span> -->
+                        </li>
+                        <li>
+                            <a href="#" data-image="{{imgs[2]}}" data-zoom-image="{{imgs[2]}}">
+                            <img class="s" src="{{imgs[2]}}" />
+                            <i>^</i>
+                            <!-- <span>
+                                <img src="{{imgs[2]}}" alt="">
+                            </span> -->
+                        </li>
+                        <li>
+                            <a href="#" data-image="{{imgs[3]}}" data-zoom-image="{{imgs[3]}}">
+                            <img class="s" src="{{imgs[3]}}" />
+                            <i>^</i>
+                            <!-- <span>
+                                <img src="{{imgs[3]}}" alt="">
+                            </span> -->
+                        </li>
+                        <li>
+                            <a href="#" data-image="{{imgs[4]}}" data-zoom-image="{{imgs[4]}}">
+                            <img class="s" src="{{imgs[4]}}" />
+                            <i>^</i>
+                            <!-- <span>
+                                <img src="{{imgs[4]}}" alt="">
+                            </span> -->
+                        </li>
+                    </ul>
                 </div>
+                
+                <!-- <div class="sider"></div>
+                <img id="img_info" style="display:none;" src="{{imgs[0]}}" alt=""> -->
             </div>
             <!-- 详情页右 -->
             <div class="detailsright fr">

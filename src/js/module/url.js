@@ -1,5 +1,6 @@
 define(function () {
     return {
-        baseUrl : "http://rap2api.taobao.org/app/mock/164216/"
+        baseUrl : "http://rap2api.taobao.org/app/mock/164216/",
+        phpbaseUrl:"http://localhost/api/v1/"
     }
 })

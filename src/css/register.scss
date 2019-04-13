@@ -1,0 +1,129 @@
+@import "style";
+@import "module/header.scss";
+@import "module/footer.scss";
+.fl{
+    float: left;
+    display: inline;
+}
+.fr{
+    float: right;
+    display: inline;
+}
+.styledisplay{
+    display: none;
+}
+.pr{
+    position: relative;
+}
+
+.register{
+    width: 1240px;
+    margin: 0 auto;
+    .reg-wrap{
+        width: 320px;
+        padding: 100px 0;
+        color: #6a6967;
+        margin: 0 auto;
+        .reg-h1{
+            color: #0c82d9;
+            text-align: center;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        .reg-content{
+            margin: 0 auto;
+            .reg-form{
+                color: #6a6967;
+                .reg-ul{
+                    width: 320px;
+                    margin-top: 38px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .reg-phone{
+                        width: 318px;
+                        height: 30px;
+                        border: 1px solid #e6e6e6;
+                        margin-bottom: 23px;
+                        position: relative;
+                        .user-span{
+                            left: 0px;
+                            top: 0px;
+                            width: 30px;
+                            height: 30px;
+                            border-right: 1px solid #e6e6e6;
+                            background: url(../img/user-id.png) no-repeat center center;
+                            background-size: 50%;
+                            display: inline-block;
+                            position: absolute;
+                        }
+                        .user-phone{
+                            color: rgb(169, 169, 169);
+                            width: 278px;
+                            height: 30px;
+                            line-height: 30px;
+                            border: 0;
+                            padding-left: 40px;
+                            outline: none;
+                        }
+                    }
+                    .reg-pwd{
+                        width: 318px;
+                        height: 30px;
+                        border: 1px solid #e6e6e6;
+                        margin-bottom: 23px;
+                        position: relative;
+                        .pwd-span{
+                            left: 0px;
+                            top: 0px;
+                            width: 30px;
+                            height: 30px;
+                            border-right: 1px solid #e6e6e6;
+                            background: url(../img/user-pwd.png) no-repeat center center;
+                            background-size: 50%;
+                            display: inline-block;
+                            position: absolute;
+                        }
+                        .user-pwd{
+                            color: rgb(169, 169, 169);
+                            width: 278px;
+                            height: 30px;
+                            line-height: 30px;
+                            border: 0;
+                            padding-left: 40px;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            .agreement{
+                line-height: 32px;
+                color: #0c82d9;
+                margin-bottom: 10px;
+                margin-top: 30px;
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                outline: none;
+            }
+            .reg-btn{
+                width: 320px;
+                margin: 0 auto;
+                .go-reg{
+                    border: 0;
+                    width: 320px;
+                    height: 30px;
+                    line-height: 30px;
+                    background-color: #0c82d9;
+                    color: #fff;
+                    font-size: 15px;
+                    display: block;
+                    margin: 0 auto;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+

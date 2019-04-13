@@ -1,0 +1,163 @@
+@import "style";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+.fl{
+    float: left;
+    display: inline;
+}
+.fr{
+    float: right;
+    display: inline;
+}
+.styledisplay{
+    display: none;
+}
+.pr{
+    position: relative;
+}
+
+// 主体
+.cart-wrap{
+    width: 1240px;
+    margin: 0 auto;
+    .cart-title{
+        height: 52px;
+        margin: 54px 0 29px;
+    }
+    .cart-table{
+        width: 100%;
+        color: #9fa0a0;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        th{
+            width: 189px;
+            height: 40px;
+            background-color: #fafafa;
+            font-size: 14px;
+            input{
+                outline: none;
+            }
+        }
+        .cart-shopname{
+            height: 40px;
+            background-color: #fafafa;
+            padding-left: 30px;
+            text-align: left;
+            font-weight: normal;
+            font-style: normal;
+        }
+        tbody tr {
+            height: 120px;
+            td{
+                width: 189px;
+                height: 40px;
+                background-color: #fafafa;
+                font-size: 14px;
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+                a{
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    // border: 1px solid #9fa0a0;
+                    color: #9fa0a0;
+                }
+                
+                input{
+                    width: 40px;
+                    outline: none;
+                    text-align: center;
+                }
+            }
+            td:nth-last-child(1){
+                cursor: pointer;
+                color: red;
+            }
+        }
+    }
+
+    // delete
+    .cart-del{
+        display: inline;
+        // background: url(../img/del.png) no-repeat 0 0;
+        margin-left: 30px;
+        // padding-left: 30px;
+        a{
+            font-size: 16px;
+            color: #9fa0a0;
+            font-weight: normal;
+        }
+    }
+    // 总计
+    .cart-money{
+        padding: 57px 0 35px;
+        span{
+            height: 20px;
+            font-size: 15px;
+            display: inline-block;
+            color: #727171;
+        }
+        strong{
+            min-width: 100px;
+            padding-left: 70px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 30px;
+            display: inline-block;
+            color: #ff7c44;
+            font-weight: normal;
+            font-style: normal;
+            b{
+                font-size: 30px;
+                font-weight: normal;
+            }
+            em{
+                font-style: normal;
+                font-size: 14px;
+            }
+        }
+    }
+    // 结算
+    .cart-btn{
+        height: 50px;
+        margin-bottom: 30px;
+        .settlement{
+            width: 147px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 15px;
+            border: 1px solid #ff7c44;
+            background-color: #ff7c44;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            outline: none;
+        }
+        .continue{
+            width: 147px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 15px;
+            border: 1px solid #dcdddd;
+            background-color: #fafafa;
+            color: #727171;
+            text-align: center;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            outline: none;
+        }
+    }
+}
+
+

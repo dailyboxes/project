@@ -54,6 +54,12 @@ gulp.task("img", () => {
         .pipe(connect.reload())
 });
 
+gulp.task("api", () => {
+    gulp.src("src/php/**/*")
+        .pipe(gulp.dest("dist/api"))
+        .pipe(connect.reload())
+});
+
 gulp.task("server", () => {
     connect.server({
         port : 1005,
@@ -68,5 +74,5 @@ gulp.task("watch", () => {
     gulp.watch("src/**/*.js", ["js"]);
 })
 
-gulp.task("default", ["html","minicss","js","libs","img","server","watch"]);
+gulp.task("default", ["html","minicss","js","libs","img","api","server","watch"]);
 

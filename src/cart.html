@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header" id="header-container"></div>
+
+    <!-- 主体 -->
+    <div class="cart-wrap">
+        <div class="cart-title">
+            <img src="img/cart_tit.png" alt="" style="width:1240px; height:52px;">
+        </div>
+        <!-- table -->
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" class="allCheck"></th>
+                    <th class="cart-shopname">商品</th>
+                    <th></th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="cart-tbody-container">
+                
+            </tbody>
+        </table>
+        <!-- delete -->
+        <h1 class="cart-del" id="all-del"><a href="javascript:;">清空购物车</a></h1>
+        <h1 class="cart-del" id="checkedDel"><a href="javascript:;">删除选中项</a></h1>
+        <!-- 总计 -->
+        <div class="cart-money">
+            <div class="fr">
+                <span>商品总计:</span>
+                <strong>
+                    ￥
+                    <b id="allmoney">0</b>
+                    <em>元</em>
+                </strong>
+            </div>
+        </div>
+        <!-- 结算 -->
+        <div class="cart-btn">
+            <input type="button" value="去结算" class="fr settlement">
+            <input type="button" value="继续购物" class="fr continue">
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer" id="footer-container"></div>
+
+    <script type="text/html" id="cart-tbody">
+        {{each cart prod}}
+            <tr class="cart-tr" data="{{prod.id}}">
+                <td class="check"><input type="checkbox" class="aCheck"></td>
+                <td class="cart-shopname">{{prod.title}}</td>
+                <td><img src="{{prod.imgs[0]}}" alt=""></td>
+                <td>￥{{prod.price}}</td>
+                <td>
+                    <a href="javascript:;" id="cartrud">-</a>
+                    <input type="text" class="shop-cart-num" value="{{prod.num}}">
+                    <a href="javascript:;" id="cartadd">+</a>
+                </td>
+                <td class="allPrice">￥<span class="allprice">{{(prod.price*prod.num).toFixed(2)}}</span></td>
+                <td class="delete">删除</td>
+            </tr>
+        {{/each}}
+    </script>
+
+
+    <script type="text/javascript" src="/libs/requirejs/require.min.js" data-main="js/cart"></script>
+</body>
+</html>
